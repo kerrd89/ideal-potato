@@ -34,7 +34,7 @@ header {
   display: inline-block;
   float: left;
 }
-#logo-overlay:after,#logo-overlay:before {
+#logo-overlay:after,#logo-overlay:before,#shop:before,#shop:after {
   height: 0;
   width: 0;
   content: "";
@@ -96,4 +96,39 @@ header {
   font-weight: bold;
   font-size: 1.2em;
   text-transform: uppercase;
+  background: linear-gradient(135deg, grey, white 60%, white);
+  padding: 20px 10px;
+  position: relative;
+}
+#shop a {
+  margin: 0px 10px;
+}
+#shop:before {
+  border-top: 60px solid white;
+  border-right: 12px solid transparent;
+  display: inline;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+.divider{
+  display: inline-block;
+  position:relative;
+}
+.divider:after,.divider:before {
+  width: 0px;
+  content: "";
+  position: relative;
+}
+.divider:before{
+  border-bottom: 60px solid #002779;
+  border-left: 12px solid transparent;
+  left: -10px;
+  top: -40px;
+}
+.divider:after{
+  border-top: 60px solid #002779;
+  border-right: 12px solid transparent;
+  left: -10px;
+  top: 39px;
 }
