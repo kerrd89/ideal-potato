@@ -97,7 +97,7 @@ header {
   font-size: 1.2em;
   text-transform: uppercase;
   background: linear-gradient(135deg, grey, white 60%, white);
-  padding: 20px 10px;
+  padding: 20px 20px 20px 10px;
   position: relative;
 }
 #shop a {
@@ -111,24 +111,46 @@ header {
   top: 0px;
   left: 0px;
 }
-.divider{
-  display: inline-block;
-  position:relative;
-}
-.divider:after,.divider:before {
+#shop:after {
   width: 0px;
   content: "";
-  position: relative;
-}
-.divider:before{
-  border-bottom: 60px solid #002779;
+  border-bottom: 59px solid #001C62;
   border-left: 12px solid transparent;
-  left: -10px;
-  top: -40px;
+  display: inline;
+  position: absolute;
+  right: 12px;
+  top: 0px;
 }
-.divider:after{
-  border-top: 60px solid #002779;
+
+#live {
+  background-color: grey;
+  height: 59px;
+  font-size: 2em;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 59px;
+}
+#live:before {
+  width: 0px;
+  content: "";
+  border-bottom: 59px solid grey;
+  border-left: 12px solid #002779;
+  display: inline;
+  position: absolute;
+  margin-left:-12px;
+}
+#live:after {
+  width: 0px;
+  content: "";
+  border-top: 59px solid grey;
   border-right: 12px solid transparent;
-  left: -10px;
-  top: 39px;
+  display: inline;
+  position: absolute;
+  margin-top: -59px;
+  margin-left: 36px;
+}
+
+#live a {
+  color: white;
 }
