@@ -1,0 +1,99 @@
+header {
+  display: flex;
+  flex-direction: column;
+}
+
+/*primary containers*/
+
+#logo-overlay {
+  position: absolute;
+  z-index: 1;
+}
+
+#banner-container {
+ background-color: #001C62;
+}
+
+#navigation-container {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#img-placeholder {
+  background-color: #002779;
+  width: 100%;
+  height: 60px;
+}
+
+#logo-overlay img {
+  padding: 20px 0px;
+  background-color: grey;
+  display: inline-block;
+  float: left;
+}
+#logo-overlay:after,#logo-overlay:before {
+  height: 0;
+  width: 0;
+  content: "";
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+#logo-overlay:before{
+  border-bottom: 202px solid grey;
+  border-left: 30px solid transparent;
+}
+#logo-overlay:after {
+  border-top: 202px solid grey;
+  border-right: 30px solid transparent;
+}
+
+#primary-nav {
+  display: flex;
+  flex-direction: row;
+  margin-left: 250px;
+}
+#primary-nav p {
+  padding: 0px 20px;
+  font-size: 1.2em;
+  margin: 19.5px 0px;
+  color: #001C62;
+  display: flex;
+  flex-direction: column;
+}
+#primary-nav p:not(:last-child) {
+  border-right: solid 2px black; /* This will not give border to last li element */
+}
+#dropdown {
+  position: relative;
+  display: inline-block;
+}
+#dropdown-content {
+  display: none;
+  position: absolute;
+  z-index: 2;
+  min-width: 160px;
+  background-color: #ffffff;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+#dropdown:hover #dropdown-content {
+  display: block;
+}
+#dropdown-element:hover #dropdown-content {
+  display: block;
+}
+#banner {
+  border: 2px solid white;
+  width: 468px;
+  height: 60px;
+  margin: 10px auto;
+}
+#shop {
+  font-weight: bold;
+  font-size: 1.2em;
+  text-transform: uppercase;
+}
